@@ -1,33 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pretty Hijab - Vente de produits hijab en ligne</title>
-	<link rel="shortcut icon" href="images/LOGO.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/LOGO.png">
+    <link rel="stylesheet" href="css/correction.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
 </head>
 <body>
-    <section class="top-page">
-        <header class="header" id="id_header">
-            <a href="index.html">
-                <img class="logo" src="images\logo.png" alt="Logo du site">
-            </a>
-            <nav class="nav">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#ventes">Nos meilleurs ventes</a></li>
-                <li><a href="#produits">Nos Produits</a></li>
-                <li><a href="#soldes">Soldes</a></li>
-            </nav>
-        </header>
-        <!-- <div class="Landing-page">
-            <a class="scroll-down" href="">Scroll <i class="fas fa-angle-down"></i></a>
-        </div> -->
-    </section>
 
-    <section class="services">
+    <header>
+        <div class="logo">
+            <img src="images/LOGO.png" alt="">
+        </div>
+
+        <a href="#" id="openBtn" class="btn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+        </a>
+
+        <nav class="sidenav" id="mySidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">Nos meilleures ventes</a>
+                </li>
+                <li>
+                    <a href="#">Nos produits</a>
+                </li>
+                <li>
+                    <a href="#">Soldes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banniere">
+        <img src="images/bg.png" alt="banniere" >
+    </section>
+    
+    <section class="services" data-aos="fade-in">
         <div class="service-item">
             <i class="fas fa-store delivery-icon"></i>
             <p class="service-details">Nos magasins à votre services</p>
@@ -42,96 +63,81 @@
         </div>
     </section>
 
-    <section class="bests-items" id="ventes">
-        <h2 class="section-title">
-            Nos meilleures ventes
-        </h2>
-        <div class="ventes">
-            <a class="ventes-box ventes1 no-grid">
-                <div class="ventes-details">
-                    <p class="ventes-name">Tuniques</p>
-                </div>
-            </a>
-            <a class="ventes-box ventes2 no-grid">
-                <div class="ventes-details">
-                    <p class="ventes-name">Jilabs</p>
-                </div>
-            </a>
-            <a class="ventes-box ventes3 no-grid">
-                <div class="ventes-details">
-                    <p class="ventes-name">Voiles</p>
-                </div>
-            </a>
-
+    <section class="best-sales" data-aos="zoom-in">
+        <h1 class="section-title">Nos meilleures ventes</h1>
+        <div class="line"></div>
+        <div class="best-sales-block">
+            <div class="product">
+                <img src="images/vedettes/vedette1.jpg" alt="best-items">
+                <h5>Tuniques</h5>
+            </div>
+            <div class="product">
+                <img src="images/vedettes/Vedette2.jpg" alt="best-items">
+                <h5>Jilbebs</h5>
+            </div>
+            <div class="product">
+                <img src="images/vedettes/vedette3.jpg" alt="best-items">
+                <h5>Voiles</h5>
+            </div>
         </div>
     </section>
 
-    <section class="bests-items" id="produits">
-        <h2 class="section-title">
-            Nos produits
-        </h2>
-        <div class="produits">
-            <a class="produits-box produits1 no-grid">
-                <div class="produits-details">
-                    <p class="produits-name">Bonnets</p>
+    <section class="products">
+        <h1 class="section-title">Nos produits</h1>
+        <div class="line"></div>
+        <div class="block">
+            <div class="up" data-aos="fade-down-right">
+                <div class="produit">
+                    <img src="images/produits/produit1.jpg" alt="">
+                    <h5>Bonnets</h5>
                 </div>
-            </a>
-            <a class="produits-box produits2 no-grid">
-                <div class="produits-details">
-                    <p class="produits-name">Voiles</p>
+                <div class="produit">
+                    <img src="images/produits/produit2.jpg" alt="">
+                    <h5>Voiles</h5>
                 </div>
-            </a>
-            <a class="produits-box produits3 no-grid">
-                <div class="produits-details">
-                    <p class="produits-name">Jilabs</p>
+                <div class="produit">
+                    <img src="images/produits/produit3.jpg" alt="">
+                    <h5>Jilbebs</h5>
                 </div>
-            </a>
-            </a>
-            <a class="produits-box produits4 no-grid">
-                <div class="produits-details">
-                    <p class="produits-name">Pantalons</p>
+            </div>
+            <div class="down" data-aos="fade-down-left">
+                <div class="produit">
+                    <img src="images/produits/produit4.jpg" alt="">
+                    <h5>Pantalons</h5>
                 </div>
-            </a>
-            </a>
-                <a class="produits-box produits5 no-grid">
-                    <div class="produits-details">
-                        <p class="produits-name">Foulards</p>
-                    </div>
-                </a>
-            </a>
-            <a class="produits-box produits6 no-grid">
-                <div class="produits-details">
-                    <p class="produits-name">Tuniques</p>
+                <div class="produit">
+                    <img src="images/produits/produit5.jpg" alt="">
+                    <h5>Foulards</h5>
                 </div>
-            </a>
-
+                <div class="produit">
+                    <img src="images/produits/produit6.jpg" alt="">
+                    <h5>Tuniques</h5>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="bests-items" id="soldes">
+    <section class="soldes" data-aos="zoom-out-right">
         <h2 class="section-title">
             Soldes
         </h2>
-        <div class="soldes">
-            <a class="soldes-box solde1 no-grid">
+        <div class="line"></div>
+        <div class="soldes-content">
                 <div class="soldes-details">
+                    <img src="images/soldes/solde1.jpg" alt="">
                     <p class="soldes-name">Tuniques</p>
                     <p class="soldes-price"><del>10.000FCFA</del> 9.000FCFA</p>
                 </div>
-            </a>
-            <a class="soldes-box solde2 no-grid">
                 <div class="soldes-details">
+                    <img src="images/soldes/solde2.jpg" alt="">
                     <p class="soldes-name">Voiles</p>
                     <p class="soldes-price"><del>2.000FCFA</del> 1.000FCFA</p>
                 </div>
-            </a>
-            <a class="soldes-box solde3 no-grid">
                 <div class="soldes-details">
+                    <img src="images/soldes/solde3.jpg" alt="">
                     <p class="soldes-name">Vestes</p>
                     <p class="soldes-price"> <del>10.000FCFA</del> 8.000FCFA</p>
                 </div>
-            </a>
-
         </div>
     </section>
 
@@ -141,6 +147,12 @@
         <p class="contact">+221330000000 - +221330000000</p>
         <a href="javascript:void(0)" class="cgv">Conditions générales de ventes</a>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
