@@ -7,6 +7,7 @@
     <title>Pretty Hijab - Vente de produits hijab en ligne</title>
     <link rel="shortcut icon" href="images/LOGO.png">
     <link rel="stylesheet" href="css/correction.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
 </head>
 <body>
@@ -47,7 +48,7 @@
         <img src="images/bg.png" alt="banniere" >
     </section>
     
-    <section class="services">
+    <section class="services" data-aos="fade-in">
         <div class="service-item">
             <i class="fas fa-store delivery-icon"></i>
             <p class="service-details">Nos magasins à votre services</p>
@@ -62,7 +63,7 @@
         </div>
     </section>
 
-    <section class="best-sales">
+    <section class="best-sales" data-aos="zoom-in">
         <h1 class="section-title">Nos meilleures ventes</h1>
         <div class="line"></div>
         <div class="best-sales-block">
@@ -85,7 +86,7 @@
         <h1 class="section-title">Nos produits</h1>
         <div class="line"></div>
         <div class="block">
-            <div class="up">
+            <div class="up" data-aos="fade-down-right">
                 <div class="produit">
                     <img src="images/produits/produit1.jpg" alt="">
                     <h5>Bonnets</h5>
@@ -99,7 +100,7 @@
                     <h5>Jilbebs</h5>
                 </div>
             </div>
-            <div class="down">
+            <div class="down" data-aos="fade-down-left">
                 <div class="produit">
                     <img src="images/produits/produit4.jpg" alt="">
                     <h5>Pantalons</h5>
@@ -116,7 +117,7 @@
         </div>
     </section>
 
-    <section class="soldes">
+    <section class="soldes" data-aos="zoom-out-right">
         <h2 class="section-title">
             Soldes
         </h2>
@@ -148,6 +149,10 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
