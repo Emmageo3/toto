@@ -60,7 +60,7 @@
         display: block;
         width: 35px;
         height: 5px;
-        background-color: black;
+        background-color: white;
         margin: 6px 0;
     }
 
@@ -75,7 +75,7 @@
     }
 
     .btn{
-        margin-left: 5rem;
+        margin-left: 70%;
     }
 
     .banniere img{
@@ -248,9 +248,242 @@
     
     /* Tablet Styles */
     @media only screen and (min-width: 461px) and (max-width: 960px) {
-        body {
-        background-color: #F5CF8E; /* Yellow */
-        }
+        /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: #bc2148;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+    
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #111;
+    }
+    
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+    
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+    
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        background-color: #bc2148;
+    }
+
+    header .logo img{
+        width: 4rem;
+    }
+
+    .btn{
+        margin-left: 80%;
+    }
+
+    .banniere img{
+        height: 30rem;
+        width: 100%;
+    }
+
+    /*-------------*/
+
+    .services{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services .service-item{
+        padding: 2rem;
+    }
+
+    .services .service-item .delivery-icon{
+        font-size: 40px;
+    }
+
+    .services .service-item .service-details{
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /*----------------*/
+
+    .best-sales{
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .section-title{
+        font-size: 35px;
+        font-family: 'Abril FatFace', cursive;
+        font-weight: 100;
+        position: relative;
+    }
+
+    .best-sales .best-sales-block{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .best-sales .best-sales-block .product{
+        margin: 1rem;
+    }
+
+    .best-sales .best-sales-block .product img{
+        height: 17rem;
+        width: 12rem;
+    }
+
+    .best-sales .best-sales-block .product h5{
+        font-size: 20px;
+    }
+
+    .line{
+        background-color: #bc2148;
+        width: 50%;
+        height: 10px;
+        margin: 0 auto;
+    }
+
+    /*------------------*/
+
+    .products{
+        margin: 5rem;
+        text-align: center;
+    }
+
+    .products .block{
+        margin-top: 1rem;
+    }
+
+    .products .block .up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products .block .up .produit{
+        margin: 1rem;
+    }
+
+    .products .block .up .produit img{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .products .block .up .produit h5{
+        font-size: 20px;
+    }
+
+    .products .block .down{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .products .block .down .produit{
+        margin: 1rem;
+    }
+
+    .products .block .down .produit img{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .products .block .down .produit h5{
+        font-size: 20px;
+    }
+
+
+    /*---------------*/
+
+    .soldes{
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .soldes .soldes-content{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .soldes .soldes-content .soldes-details{
+        margin-bottom: 2rem;
+    }
+
+    .soldes .soldes-content .soldes-details img{
+        height: 20rem;
+        width: 25rem;
+    }
+
+    .soldes del{
+        color: red;
+    }
+
+    /*-----------*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #bc2148;
+        color: white;
+    }
+
+    footer p{
+        margin: 1rem;
+        margin-top: 10px;
+    }
+
+    footer  a{
+        margin: 1rem;
+        text-decoration: none;
+        color: white;
+    }
     }
     
   /* Desktop Styles */
